@@ -37,7 +37,7 @@
     "rules": {
         "array-bracket-spacing": ["warn", "always"],
         "array-callback-return": "warn",
-        "arrow-parens": [2, "as-needed"],
+        "arrow-parens": "off",
         "class-methods-use-this": 0,
         "consistent-return": "warn",
         "func-names": ["error", "never"],

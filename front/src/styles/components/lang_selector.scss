@@ -1,0 +1,22 @@
+
+.language-selector {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: -8px -15px !important;
+    padding: 8px 15px;
+
+    button {
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        width: 100%;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: inherit;
+        line-height: inherit;
+        outline: none
+    }
+}

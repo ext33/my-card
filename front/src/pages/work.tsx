@@ -1,10 +1,25 @@
-import { NextPage } from "next"
+import { GetServerSideProps, NextPage } from "next"
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"
+
+import MainLayout from "@/components/layout/MainLayout"
+
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale || "en", [
+                "common",
+            ])),
+        },
+    }
+}
 
 const Work: NextPage = () => {
     return (
-        <div>
+        <MainLayout>
+            <div>
 
-        </div>
+            </div>
+        </MainLayout>
     )
 }
 
