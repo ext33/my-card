@@ -199,7 +199,7 @@ const Home: NextPage = () => {
                                     <p>Udemy - Next & SSR, 2021</p>
                                     <p>Udemy - React Course, 2021</p>
                                     <p>Specialist - OOP in Python, 2020</p>
-                                    <p>edX -Introduction to Programming with Python, 2020</p>
+                                    <p>edX - Introduction to Programming with Python, 2020</p>
                                 </div>
                             </div>
                         </div>

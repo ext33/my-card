@@ -41,7 +41,6 @@ const LangSelector: FC<TProps> = ({ className }) => {
         router.push({ pathname, query }, asPath, { locale: newLocale })
     }
 
-
     return (
         <div className={className ? className : ""}>
             <div className="language-selector" onClick={changeLanguageHandler}>

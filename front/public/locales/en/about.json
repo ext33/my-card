@@ -1,3 +1,26 @@
 {
+    "nameText": "Egor Bekker",
+    "currentLocationText": "Antalya, Turkey",
+    "birthdayText": "Born on 2 Feb 2001",
 
+    "hardSkillsTitle": "Hard skills",
+
+    "softSkillsTitle": "Soft skills",
+
+    "softSkillResp": "Responsibility",
+    "softSkillFlex": "Flexibility",
+    "softSkillOpt": "Optimism",
+    "softSkillMind": "Systems thinking",
+    "softSkillPunctuality": "Punctuality",
+    "softSkillCommunicate": "Communication",
+
+    "languagesTitle": "Languages",
+
+    "workTitle": "Work experience",
+
+    "educationTitle": "Education",
+    "educationCollegeTitle": "Programming and Cybersecurity College",
+    "educationCollegeText": "Software Development, 2017 - 2021",
+
+    "educationExtraTitle": "Additional education"
 }

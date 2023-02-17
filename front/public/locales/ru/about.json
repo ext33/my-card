@@ -1,5 +1,4 @@
 {
-    "helloText": "Привет",
     "nameText": "Егор Беккер",
     "currentLocationText": "Анталья, Турция",
     "birthdayText": "Родился 2 февраля 2001 года",
@@ -23,9 +22,5 @@
     "educationCollegeTitle": "Колледж программирования и кибербезопасности",
     "educationCollegeText": "Разработка ПО, 2017 - 2021",
 
-    "educationExtraTitle": "Дополнительное образование",
-    "educationExtraZeroText": "",
-    "educationExtraFirstText": "",
-    "educationExtraSecondText": "",
-    "educationExtraThirdText": "Specialist - ООП в Python, 2020"
+    "educationExtraTitle": "Дополнительное образование"
 }
