@@ -105,6 +105,22 @@ a {
     flex-direction: column;
 }
 
+.flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 45%;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+    margin-right: 8px;
+
+    @media (max-width: 720px) {
+        width: 100%;
+    }
+}
+
 //
 //@media (prefers-color-scheme: dark) {
 //    html {

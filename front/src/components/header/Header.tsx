@@ -22,17 +22,7 @@ const Header: FC = () => {
 
     const variantsNav = {
         open: { opacity: 1, x: 0 },
-        closed: { opacity: 1, x: -800 },
-    }
-
-    const variants = {
-        visible: {
-            opacity: 1,
-            transition: { duration: .4, delay: .1 }
-        },
-        hidden: {
-            opacity: 0,
-        },
+        closed: { opacity: 0, x: "-100%" },
     }
 
     const renderLinks = () => (
@@ -61,23 +51,11 @@ const Header: FC = () => {
 
     return (
         <>
-            <motion.div
-                className="header__container"
-                initial="hidden"
-                animate="visible"
-                variants={variants}
-            >
-
+            <div className="header__container">
                 {renderLinks()}
+            </div>
 
-            </motion.div>
-
-            <motion.div
-                className="header_container-mobile"
-                initial="hidden"
-                animate="visible"
-                variants={variants}
-            >
+            <div className="header_container-mobile">
 
                 <div onClick={() => setIsOpen(isOpen => !isOpen)} className="header__nav-btn">
                     <div className="header__nav-item">
@@ -90,6 +68,7 @@ const Header: FC = () => {
                 <motion.nav
                     animate={isOpen ? "open" : "closed"}
                     variants={variantsNav}
+                    initial={false}
                     className="header__links-mobile"
                 >
                     <div onClick={() => setIsOpen(isOpen => !isOpen)} className="header__nav-btn" style={{ position: "absolute", top: 0, left: 0, padding: 10 }}>
@@ -99,11 +78,12 @@ const Header: FC = () => {
                             </svg>
                         </div>
                     </div>
+
                     <h1>e x t 3 3</h1>
                     {renderLinks()}
                 </motion.nav>
 
-            </motion.div>
+            </div>
         </>
     )
 }
