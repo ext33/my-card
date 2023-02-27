@@ -55,11 +55,12 @@ const Home: NextPage = () => {
                 "Next",
                 "Redux",
                 "SCSS",
-                "SEO Optimization"
+                "SEO Optimization",
+                "Docker"
             ]
         },
         {
-            title: "Software Engineer",
+            title: "Fullstack Engineer",
             company: "Rest App",
             time: "Part time",
             period: "12.2022 - P.T.",
@@ -70,6 +71,7 @@ const Home: NextPage = () => {
                 "Python",
                 "FastAPI",
                 "SQL",
+                "Docker"
             ]
         },
         {
@@ -81,10 +83,14 @@ const Home: NextPage = () => {
                 "Typescript",
                 "React",
                 "Next",
+                "Redux",
+                "SCSS",
+                "SEO Optimization",
+                "Docker"
             ]
         },
         {
-            title: "Frontend Engineer",
+            title: "Fullstack Engineer",
             company: "Overvest",
             time: "Freelance",
             period: "02.2021 - 10.2021",
@@ -93,7 +99,25 @@ const Home: NextPage = () => {
                 "React",
                 "Next",
                 "Python",
-                "Django"
+                "Django",
+                "Redux",
+                "SCSS",
+                "SEO Optimization",
+                "Docker"
+            ]
+        },
+        {
+            title: "Frontend Engineer",
+            company: "Steak's Restaurant",
+            time: "Freelance",
+            period: "10.2020 - 01.2021",
+            skills: [
+                "Typescript",
+                "React",
+                "Docker",
+                "Redux",
+                "SCSS",
+                "SEO Optimization"
             ]
         },
     ]
