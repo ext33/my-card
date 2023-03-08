@@ -31,7 +31,8 @@ const Home: NextPage = () => {
         "Django",
         "FastAPI",
         "SQL",
-        "Git"
+        "Git",
+        "WebSockets"
     ]
 
     const softSkills = [
@@ -127,11 +128,7 @@ const Home: NextPage = () => {
             <div className="home">
 
                 <div className="home__head">
-                    <div className="home__head_start">
-                        {/*<span>*/}
-                        {/*    {t("helloText")},*/}
-                        {/*</span>*/}
-                    </div>
+                    <div className="home__head_start" />
 
                     <Image
                         src="/assets/img/MyPhoto.png"
