@@ -1,26 +1,26 @@
 {
-    "nameText": "Егор Беккер",
-    "currentLocationText": "Астана, Казахстан",
-    "birthdayText": "Родился 2 февраля 2001 года",
+  "nameText": "Егор Беккер",
+  "currentLocationText": "Астана, Казахстан",
+  "birthdayText": "Родился 2 февраля 2001 года",
 
-    "hardSkillsTitle": "Hard skills",
+  "hardSkillsTitle": "Hard skills",
 
-    "softSkillsTitle": "Soft skills",
+  "softSkillsTitle": "Soft skills",
 
-    "softSkillResp": "Ответсвенность",
-    "softSkillFlex": "Гибкость",
-    "softSkillOpt": "Оптимизм",
-    "softSkillMind": "Системное мышление",
-    "softSkillPunctuality": "Пунктуальность",
-    "softSkillCommunicate": "Коммуникация",
+  "softSkillResp": "Ответсвенность",
+  "softSkillFlex": "Гибкость",
+  "softSkillOpt": "Оптимизм",
+  "softSkillMind": "Системное мышление",
+  "softSkillPunctuality": "Пунктуальность",
+  "softSkillCommunicate": "Коммуникация",
 
-    "languagesTitle": "Языки",
+  "languagesTitle": "Языки",
 
-    "workTitle": "Опыт работы",
+  "workTitle": "Опыт работы",
 
-    "educationTitle": "Образование",
-    "educationCollegeTitle": "Колледж программирования и кибербезопасности",
-    "educationCollegeText": "Разработка ПО, 2017 - 2021",
+  "educationTitle": "Образование",
+  "educationCollegeTitle": "Колледж программирования и кибербезопасности",
+  "educationCollegeText": "Разработка ПО, 2017 - 2021",
 
-    "educationExtraTitle": "Дополнительное образование"
+  "educationExtraTitle": "Дополнительное образование"
 }
