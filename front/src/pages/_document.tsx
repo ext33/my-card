@@ -1,14 +1,17 @@
 import { Html, Head, Main, NextScript } from "next/document"
 
 export default function Document() {
+  const AppHead = Head as any
+  const AppNextScript = NextScript as any
+
   return (
     <Html lang="en">
-      <Head>
+      <AppHead>
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </AppHead>
       <body>
         <Main />
-        <NextScript />
+        <AppNextScript />
         <script> </script>
       </body>
     </Html>

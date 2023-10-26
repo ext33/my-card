@@ -6,6 +6,7 @@ import { appWithTranslation } from "next-i18next"
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter()
+  const Page = Component as any
 
   return (
     <AnimatePresence
@@ -14,7 +15,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       mode="wait"
       onExitComplete={() => typeof window !== "undefined" ? window.scrollTo(0, 0) : null}
     >
-      <Component {...pageProps} key={router.route} />
+      <Page {...pageProps} key={router.route} />
     </AnimatePresence>
   )
 }
