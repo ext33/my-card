@@ -29,7 +29,7 @@
         "class-methods-use-this": 0,
         "consistent-return": "warn",
         "func-names": ["error", "never"],
-        "indent": ["warn", 4, { "ignoredNodes": ["JSXElement"], "SwitchCase": 1 }],
+        "indent": ["warn", 2, { "SwitchCase": 1 }],
         "jsx-a11y/label-has-associated-control": 0,
         "linebreak-style": "off",
         "max-classes-per-file": ["error", 100],
