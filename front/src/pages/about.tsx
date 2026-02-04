@@ -27,12 +27,13 @@ const About: NextPage = () => {
     "Redux",
     "SCSS",
     "Node.js",
+    "Express",
+    "NestJS",
     "Python",
     "Django",
-    "FastAPI",
     "SQL",
     "Git",
-    "WebSockets"
+    "Docker"
   ]
 
   const softSkills = [
@@ -46,18 +47,17 @@ const About: NextPage = () => {
 
   const workExp = [
     {
-      title: "Frontend Engineer",
+      title: "Fullstack Engineer",
       company: "FCE GROUP AG",
       time: "Full time",
-      period: "04.2023 - P.T.",
+      period: "04.2023 - Present",
       skills: [
         "Typescript",
         "React",
         "Next",
-        "Context",
-        "GraphQL",
-        "SCSS",
-        "SEO Optimization",
+        "Express",
+        "NestJS",
+        "Blockchain",
         "Docker"
       ]
     },
@@ -65,15 +65,14 @@ const About: NextPage = () => {
       title: "Frontend Engineer",
       company: "SCAN Analytics",
       time: "Full time",
-      period: "05.2022 - 04.2023",
+      period: "05.2022 - 03.2023",
       skills: [
         "Typescript",
         "React",
         "Next",
-        "Redux",
-        "SCSS",
-        "SEO Optimization",
-        "Docker"
+        "Redux Toolkit",
+        "Jest",
+        "Ant Design"
       ]
     },
     {
@@ -86,25 +85,23 @@ const About: NextPage = () => {
         "React",
         "Next",
         "Redux",
-        "SCSS",
-        "SEO Optimization",
-        "Docker"
+        "MobX",
+        "Ant Design",
+        "Material UI"
       ]
     },
     {
-      title: "Fullstack Engineer",
+      title: "Frontend Engineer",
       company: "Overvest",
-      time: "Freelance",
-      period: "12.2020 - 10.2021",
+      time: "Full time",
+      period: "02.2021 - 10.2021",
       skills: [
         "Typescript",
         "React",
         "Next",
-        "Python",
-        "Django",
         "Redux",
-        "SCSS",
-        "SEO Optimization",
+        "Django",
+        "PostgreSQL",
         "Docker"
       ]
     },
@@ -118,7 +115,7 @@ const About: NextPage = () => {
           <div className="about__head_start" />
 
           <Image
-            src="/assets/img/MyPhoto.png"
+            src="/assets/img/MyPhoto.jpeg"
             alt=""
             className="about__head_photo"
             width={320}
@@ -133,7 +130,7 @@ const About: NextPage = () => {
             </h3>
             <p>Email: redwoodx3@gmail.com</p>
             <p>Telegram: @xdxd3xd</p>
-            <a href="https://hh.ru/applicant/resumes/view?resume=bb5fa208ff088712c00039ed1f57487159675a" target="_blank">HeadHunter</a>, <a href="https://www.linkedin.com/in/egor-bekker-1343b121b/" target="_blank">Linkedin</a>, <a href="https://www.instagram.com/ext3ws/" target="_blank">Instagram</a>
+            <a href="https://hh.ru/applicant/resumes/view?resume=bb5fa208ff088712c00039ed1f57487159675a" target="_blank">HeadHunter</a>, <a href="https://www.linkedin.com/in/ext33/" target="_blank">Linkedin</a>, <a href="https://www.instagram.com/ext3ws/" target="_blank">Instagram</a>
             <p>
               {t("birthdayText")}
             </p>
@@ -180,7 +177,7 @@ const About: NextPage = () => {
                   Russian - Native
                 </p>
                 <p>
-                  English - A2
+                  English - B1
                 </p>
                 <p>
                   Serbian - A1

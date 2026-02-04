@@ -1,6 +1,7 @@
 .project-item {
-  width: 88%;
-  margin: 25px 0;
+  max-width: 800px;
+  margin: 15px 10px;
+  padding: 0 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -20,7 +21,6 @@
   }
 
   @media (max-width: 600px) {
-    width: 100%;
     flex-direction: column-reverse;
   }
 
@@ -32,13 +32,13 @@
 .project-item__info {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  // width: 40%;
   justify-content: flex-start;
   align-items: flex-start;
 
-  @media (max-width: 600px) {
-    width: 80%;
-  }
+  // @media (max-width: 600px) {
+  //   width: 80%;
+  // }
 }
 
 .project-item__title {

@@ -34,12 +34,14 @@ const ProjectItem: FC<IProps> = ({ item, index }) => {
       animate="visible"
       variants={variants}
     >
-      <Image
-        src={item.image}
-        alt={item.title}
-        width={1000}
-        height={800}
-      />
+      {item.image && (
+        <Image
+          src={item.image}
+          alt={item.title}
+          width={1000}
+          height={800}
+        />
+      )}
 
       <div className="project-item__info">
         <div className="project-item__title">

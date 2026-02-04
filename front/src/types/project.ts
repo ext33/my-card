@@ -4,7 +4,7 @@ export interface IProjectLinks {
 }
 
 export interface IProjectItems {
-  image: string
+  image?: string
   title: string
   description: {
     en: string

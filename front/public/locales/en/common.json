@@ -1,10 +1,10 @@
 {
   "homePageTitleNav": "Main",
-  "workPageTitleNav": "My works",
-  "aboutPageTitleNav": "About me",
+  "workPageTitleNav": "Projects",
+  "aboutPageTitleNav": "About",
   "homePageTitle": "Main",
-  "workPageTitle": "My works",
-  "aboutPageTitle": "About me",
+  "workPageTitle": "Projects",
+  "aboutPageTitle": "About",
   "aboutContact": "For any questions, contact me via",
   "links": "My social networks:",
   "aboutWorkThings": "For my work I use following things:"
