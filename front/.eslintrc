@@ -15,9 +15,7 @@
 
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "project": "tsconfig.json",
-        "tsconfigRootDir": ".",
-        "ignorePatterns": [".eslintrc.js", "config-overrides.js"]
+        "project": "tsconfig.json"
     },
 
     "plugins": ["@typescript-eslint", "import"],
@@ -56,8 +54,9 @@
         "no-empty-function": "warn",
         "@typescript-eslint/explicit-module-boundary-types": 0,
         "@typescript-eslint/no-empty-function": "warn",
-        "@typescript-eslint/ban-types": "warn",
         "@typescript-eslint/ban-ts-comment": "warn",
+        "@typescript-eslint/no-explicit-any": "warn",
+        "@typescript-eslint/no-unused-expressions": "off",
         "import/no-named-as-default": "off",
         "import/no-named-as-default-member": "off",
         "import/order": [

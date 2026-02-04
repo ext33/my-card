@@ -5,7 +5,7 @@ import { useRouter } from "next/router"
 
 interface INavLinkProps {
   to: string,
-  children: React.ReactFragment | null,
+  children: React.ReactNode,
   onClick?: () => void
 }
 
