@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react"
+import { ChangeEvent, FC, useEffect } from "react"
 
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
@@ -9,42 +9,44 @@ type TProps = {
   className?: string
 }
 
+const LOCALES = [
+  { code: "en", label: "EN" },
+  { code: "ru", label: "RU" },
+]
+
 const LangSelector: FC<TProps> = ({ className }) => {
 
   const { i18n } = useTranslation()
   const router = useRouter()
-  const [ appLocale, setAppLocale ] = useState("en")
 
+  // Set English as default on first visit
   useEffect(() => {
-    const locale = getCookie("NEXT_LOCALE")
-    if (locale) {
-      setAppLocale(locale)
+    const savedLocale = getCookie("NEXT_LOCALE")
+    if (!savedLocale) {
+      setCookie("NEXT_LOCALE", "en")
+      if (router.locale !== "en") {
+        const { pathname, asPath, query } = router
+        router.push({ pathname, query }, asPath, { locale: "en" })
+      }
     }
   }, [])
 
-  const changeLanguageHandler = () => {
-    if (appLocale === "ru") {
-      i18n.changeLanguage("en").then()
-      onToggleLanguageClick("en")
-      setAppLocale("en")
-      setCookie("NEXT_LOCALE", "en")
-    } else {
-      i18n.changeLanguage("ru").then()
-      onToggleLanguageClick("ru")
-      setAppLocale("ru")
-      setCookie("NEXT_LOCALE", "ru")
-    }
-  }
-
-  const onToggleLanguageClick = (newLocale: string) => {
+  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    const newLocale = e.target.value
+    i18n.changeLanguage(newLocale)
+    setCookie("NEXT_LOCALE", newLocale)
     const { pathname, asPath, query } = router
-    router.push({ pathname, query }, asPath, { locale: newLocale }).then()
+    router.push({ pathname, query }, asPath, { locale: newLocale })
   }
 
   return (
-    <div className={className ? className : ""}>
-      <div className="language-selector" onClick={changeLanguageHandler}>
-        {appLocale?.toUpperCase()}
+    <div className={className ?? ""}>
+      <div className="language-selector">
+        <select value={router.locale} onChange={handleChange}>
+          {LOCALES.map(({ code, label }) => (
+            <option key={code} value={code}>{label}</option>
+          ))}
+        </select>
       </div>
     </div>
   )
